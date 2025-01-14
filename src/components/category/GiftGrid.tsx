@@ -10,7 +10,7 @@ export const GiftGrid = ({ category }: Props) => {
 
   return (
     <>
-      {isLoading && <h1>Cargando imagenes...</h1>}
+      {isLoading && <h1>Cargando...</h1>}
       <h2 className="titleCategory">{category}</h2>
       <div className="gifContainer">
         {images?.map((imagen: any) => (

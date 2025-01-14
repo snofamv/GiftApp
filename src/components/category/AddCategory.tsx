@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 interface Props {
-  //   setCategories: React.Dispatch<React.SetStateAction<string[]>>;
   onNewCategory: (newValue: string) => void;
 }
 export const AddCategory = ({ onNewCategory }: Props) => {
@@ -17,7 +16,7 @@ export const AddCategory = ({ onNewCategory }: Props) => {
     setInputValue("");
   };
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} aria-label="form">
       <input
         type="text"
         value={inputValue}

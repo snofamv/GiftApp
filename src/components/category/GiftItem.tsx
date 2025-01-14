@@ -7,7 +7,7 @@ export interface Props {
 export const GiftItem = ({ id, title, url }: Props) => {
   return (
     <div className="card">
-      <img src={url} alt={`img-${title}-${id}`} className="gif" />
+      <img src={url} alt={title} className="gif" />
       <p>{title}</p>
     </div>
   );
